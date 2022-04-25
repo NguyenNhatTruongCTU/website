@@ -14,7 +14,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
         var request = new XMLHttpRequest();
         var urlHere = "https://api.thingspeak.com/update?";
         
-        urlHere = urlHere + "api_key=SSDLCZWNRHIVMJUF&field4="+ dat;
+        urlHere = urlHere + "api_key=ZK3DYSO4FF183EHD&field1="+ dat;
         request.open('GET', urlHere, true);
         request.send();
         setTimeout(function(){  
@@ -25,7 +25,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     {
         var request = new XMLHttpRequest();
         var urlHere = "https://api.thingspeak.com/update?";
-        urlHere = urlHere + "api_key=SSDLCZWNRHIVMJUF&field5="+ dat;
+        urlHere = urlHere + "api_key=ZK3DYSO4FF183EHD&field2="+ dat;
         
         if (parseInt(dat)<=tonKho) {
           request.open('GET', urlHere, true);
@@ -41,7 +41,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     {
         var request = new XMLHttpRequest();
         var urlHere = "https://api.thingspeak.com/update?";
-        urlHere = "https://api.thingspeak.com/channels/1421792/feeds.json";
+        urlHere = "https://api.thingspeak.com/channels/1713661/feeds.json";
         request.open('GET', urlHere, true);
         request.onload = function() {
             if (request.status == 200) {
@@ -52,11 +52,11 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                 dataNhap = new Array();
                 dataXuat = new Array();
                 for(i=0;i<length;i++){
-                  if (data.feeds[i].field4 != null){
-                    dataNhap.push(data.feeds[i].field4);
+                  if (data.feeds[i].field1 != null){
+                    dataNhap.push(data.feeds[i].field1);
                   }
-                  if (data.feeds[i].field5 != null){
-                    dataXuat.push(data.feeds[i].field5);
+                  if (data.feeds[i].field2 != null){
+                    dataXuat.push(data.feeds[i].field2);
                   }
                 }
                 // hiển thị số lượng tồn kho
@@ -132,9 +132,9 @@ body {
 <body onload="thongKe()">
 
 <div class="sidenav">
-  <a href="https://vankhanh-ctu.github.io/website/">Trang chủ</a>
-  <a href="https://vankhanh-ctu.github.io/website/thingspeak-sample.html">Nhập xuất hàng</a>
-  <a href="https://vankhanh-ctu.github.io/website/thingspeak-thongke.html">Thống kê</a>
+  <a href="https://nguyennhattruongctu.github.io/website/">Trang chủ</a>
+  <a href="https://nguyennhattruongctu.github.io/website/nhapxuat.html">Nhập xuất hàng</a>
+  <a href="https://nguyennhattruongctu.github.io/website/thongke.html">Thống kê</a>
 </div>
 
 <div class="content">

@@ -50,12 +50,12 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                 var xNhap = new Array();
                 var xXuat = new Array();
                 for(var i=0;i<length;i++){
-                  if (data.feeds[i].field4 != null){
-                    yNhap.push(data.feeds[i].field4);
+                  if (data.feeds[i].field1 != null){
+                    yNhap.push(data.feeds[i].field1);
                     xNhap.push(data.feeds[i].created_at);
                   }
-                  if (data.feeds[i].field5 != null){
-                    yXuat.push(data.feeds[i].field5);
+                  if (data.feeds[i].field2 != null){
+                    yXuat.push(data.feeds[i].field2);
                     xXuat.push(data.feeds[i].created_at);
                   }
                 }
@@ -179,9 +179,9 @@ body {
 <body onload="thongKe()">
 
 <div class="sidenav">
-  <a href="https://vankhanh-ctu.github.io/website/">Trang chủ</a>
-  <a href="https://vankhanh-ctu.github.io/website/thingspeak-sample.html">Nhập xuất hàng</a>
-  <a href="https://vankhanh-ctu.github.io/website/thingspeak-thongke.html">Thống kê</a>
+  <a href="https://nguyennhattruongctu.github.io/website/">Trang chủ</a>
+  <a href="https://nguyennhattruongctu.github.io/website/nhapxuat.html">Nhập xuất hàng</a>
+  <a href="https://nguyennhattruongctu.github.io/website/thongke.html">Thống kê</a>
 </div>
 
 <div class="content">
